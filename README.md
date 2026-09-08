@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block content %}<h1>Команды</h1><div class="card">{% for t in teams %}<p><b>{{t.name}}</b> — {{t.users|length}} пользователей, {{t.bookings|length}} публикаций</p>{% endfor %}</div><div class="card"><h3>Пользователи</h3>{% for u in users %}<p>{{u.name}} — {{u.email}} — {{u.role}}</p>{% endfor %}</div>{% endblock %}
